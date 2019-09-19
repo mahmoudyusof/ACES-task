@@ -2,15 +2,15 @@ html, body{
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 .nav{
     height: 100vh;
-    padding: 0 5px;
+    padding: 0;
     position: fixed;
     width: 200px;
     z-index: 10;
-    background-color: white;
+    background-color: rgb(12, 132, 68);
     box-shadow: -1px -1px 50px 2px #0009;
     transition: 0.3s ease-in-out all;
 }
@@ -33,34 +33,37 @@ html, body{
     display: block;
 }
 .nav-link{
-    color: #222;
+    color: #ddd;
     text-decoration: none;
     font-family: arial;
     font-size: 1.2rem;
-    border-radius: 5px;
-    padding: 5px 10px;
+    /* border-radius: 5px; */
+    padding: 5px 10px 5px 20px;
     display: block;
     transition: ease-in-out 0.3s all;
 }
 .nav-link:hover{
-    background-color: rgb(12, 132, 68);
+    /* background-color: white;
+    color: rgb(12, 132, 68); */
+    background-color: rgb(2, 122, 58);
     color: white;
 }
 .nav-link.active{
-    background-color: rgb(12, 132, 68);
+    /* background-color: white;
+    color: rgb(12, 132, 68); */
+    background-color: rgb(2, 122, 58);
     color: white;
 }
 .toggle img{
     height: 50px;
     width: 45px;
-    /* filter: invert(100%); */
 }
 .top{
     display: flex;
     width: 100%;
     padding: 0 30px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: rgb(12, 132, 68);
     position: fixed;
     justify-content: space-between;
     z-index: 9;
@@ -73,4 +76,38 @@ html, body{
 .toggle{
     max-height: 50px;
     cursor: pointer;
+}
+.toggle img{
+    filter: invert(100%);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #222;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.fa-facebook, .fa-linkedin, .fa-youtube, .fa-instagram{
+    color: #ddd;
+}
+.footer-link{
+    margin: 0 5px;
+}
+.copy{
+    font-family: arial;
+    color: #ddd;
+    margin-left: 50px;
+}
+@media(max-width: 560px){
+    footer{
+        flex-direction: column;
+    }
+    .copy{
+        text-align: center;
+        margin-left: 0;
+    }
 }
