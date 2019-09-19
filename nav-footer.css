@@ -1,0 +1,76 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #eee;
+}
+.nav{
+    height: 100vh;
+    padding: 0 5px;
+    position: fixed;
+    width: 200px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: -1px -1px 50px 2px #0009;
+    transition: 0.3s ease-in-out all;
+}
+.show{
+    left: 0;
+}
+.hide{
+    left: -210px;
+    box-shadow: 0 0 0 0 white;
+}
+.nav img{
+    max-height: 100px;
+}
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    display: block;
+}
+.nav-link{
+    color: #222;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: block;
+    transition: ease-in-out 0.3s all;
+}
+.nav-link:hover{
+    background-color: rgb(12, 132, 68);
+    color: white;
+}
+.nav-link.active{
+    background-color: rgb(12, 132, 68);
+    color: white;
+}
+.toggle img{
+    height: 50px;
+    width: 45px;
+    /* filter: invert(100%); */
+}
+.top{
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 9;
+    align-items: center;
+    transition: 0.3s ease-in-out all;
+}
+.top img{
+    max-height: 80px;
+}
+.toggle{
+    max-height: 50px;
+    cursor: pointer;
+}
