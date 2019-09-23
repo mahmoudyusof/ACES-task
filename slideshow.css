@@ -1,0 +1,132 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-image: url("back.jpg");
+	
+}
+
+#bton,#bton1{
+	float: right;
+	margin: 10px;
+		
+}
+
+.show{
+	position: absolute;
+	width:100%;
+	height: 50%;
+	margin: 0;
+	margin-top: 10%;
+	background-color: rgba(0,0,20,0.3);
+
+	
+
+}
+.slide1,.slide2,.slide3{
+
+	width: 80%;
+	height:90%;
+}
+#workshop{
+	max-width: 50%;
+	height:200px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+.slide1{
+	position: absolute;
+	margin: 0 10%;
+	animation: fade1 10s infinite;
+	text-align: center;
+	color: white;
+	font-size: 5em;
+	padding: 1%;
+
+}
+
+.slide2{
+	position: absolute;
+	animation: fade2 10s infinite;
+	color: white;
+	text-align: center;
+	font-size: 1.25em;
+	margin: 0 10%;
+	padding: 1%;
+}
+
+.slide3{
+	position: absolute;
+	animation: fade3 10s infinite;
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	margin: 0 10%;
+	padding: 3%;
+}
+
+@keyframes fade1{
+	0%{
+		opacity: 1;
+	}
+	25%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes fade2{
+	0%{
+		opacity: 0;
+	}
+	25%{
+		opacity: 1;
+	}
+	75%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes fade3{
+	0%{
+		opacity: 0;
+	}
+	25%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.back { 
+	background-color: #343a40; 
+	color: white; 
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	
+
+}
+.fcontainer { 
+	
+	position: relative;
+	border-bottom: solid 2pt #0C8444; 
+	border-right: solid 2pt #0C8444; 
+	border-radius: 10px;
+	 }
+ .fcontainer1 { margin-left: 50px; }
+
+
+
