@@ -1,0 +1,49 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-image: url("back1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: #0C8444;
+    padding: 40px;
+    margin: 25px auto;
+    background: linear-gradient(0deg, rgba(0, 36, 17, 1) 0%, rgba(12, 132, 68, 1) 70%, rgba(12, 132, 68, 0.613865614605217) 100%);
+    width: 75%;
+    margin: 30px auto;
+    border-right: 8px solid white;
+    border-radius: 20px;
+    border-left: 8px solid white;
+    padding: 15px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+
+.divtext {
+    text-align: center;
+    width: 100%;
+    padding: 15px 10px;
+    background: linear-gradient(to right bottom, white, #0C8444);
+    border-left: solid 7px #6c757d;
+    border-right: solid 7px #6c757d;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+.headtext {
+    font-size: 22pt;
+    font-weight: 600;
+    margin: 10px auto;
+    width: 30%;
+    border-bottom: 5px #6c757d solid;
+    border-bottom-right-radius: 30%;
+}
+
+.ptext {
+    font-size: 18pt;
+    margin: 15px;
+}
