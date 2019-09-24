@@ -1,0 +1,265 @@
+
+
+
+.nav{
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    width: 200px;
+    z-index: 10;
+    background-color: rgb(12, 132, 68);
+    box-shadow: -1px -1px 50px 2px #0009;
+    transition: 0.3s ease-in-out all;
+}
+.show{
+    left: 0;
+}
+.hide{
+    left: -210px;
+    box-shadow: 0 0 0 0 white;
+}
+.nav img{
+    max-height: 100px;
+}
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    display: block;
+}
+.nav-link{
+    color: #ddd;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 1.2rem;
+    /* border-radius: 5px; */
+    padding: 5px 10px 5px 20px;
+    display: block;
+    transition: ease-in-out 0.3s all;
+}
+.nav-link:hover{
+    /* background-color: white;
+    color: rgb(12, 132, 68); */
+    background-color: rgb(2, 122, 58);
+    color: white;
+}
+.nav-link.active{
+    /* background-color: white;
+    color: rgb(12, 132, 68); */
+    background-color: rgb(2, 122, 58);
+    color: white;
+}
+.toggle img{
+    height: 50px;
+    width: 45px;
+}
+.top{
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: rgb(12, 132, 68);
+    position: fixed;
+    justify-content: space-between;
+    z-index: 9;
+    align-items: center;
+    transition: 0.3s ease-in-out all;
+    text-align: center;
+    color:white;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 80px;
+
+}
+.top a img{
+    max-height: 90px;
+    padding-top: 14px;
+}
+.toggle{
+    max-height: 50px;
+    cursor: pointer;
+}
+.toggle img{
+    filter: invert(100%);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #222;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.fa-facebook, .fa-linkedin, .fa-youtube, .fa-instagram{
+    color: #ddd;
+}
+.footer-link{
+    margin: 0 5px;
+}
+.copy{
+    font-family: arial;
+    color: #ddd;
+    margin-left: 50px;
+}
+@media(max-width: 560px){
+    footer{
+        flex-direction: column;
+    }
+    .copy{
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("back1.jpg");
+    max-height: 1000px;
+   background-size:auto;
+   background-repeat: no-repeat;
+}
+
+.container{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.2);
+    min-width: 100%;
+     max-width: 100%;
+    height: auto;
+    border: none;
+    position: relative;
+    top:25vh;
+    
+    
+}
+
+.col.row{position: absolute;}
+
+.slide1,.slide2,.slide3{
+
+    width: 80%;
+    height:90%;
+}
+#workshop{
+    max-width: 50%;
+    height:200px;
+}
+
+p{
+    font-family: sans-serif;
+text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+.slide1{
+    position: absolute;
+    margin: 0 10%;
+    animation: fade1 8s infinite;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    padding: 1%;
+    padding-bottom: 5%;
+    
+}
+
+.slide2{
+    position: absolute;
+    animation: fade2 8s infinite;
+    color: white;
+    text-align: center;
+    font-size: 1.8vw;
+    margin: 0 10%;
+    padding: 1%;
+    
+}
+
+.slide3{
+    position: absolute;
+    animation: fade3 8s infinite;
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 0 10%;
+    padding-bottom: 5%;
+    
+}
+
+.container:hover .slide1,.container:hover .slide2,.container:hover .slide3{
+     animation-play-state: paused;
+}
+
+
+@keyframes fade1{
+    0%{
+        opacity: 1;
+    }
+   
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade2{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fade3{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
