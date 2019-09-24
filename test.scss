@@ -1,0 +1,9 @@
+@mixin full-bg-img {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* vh = viewport height */
+}
+
+.full-bg-img {
+    @include full-bg-img;
+}
