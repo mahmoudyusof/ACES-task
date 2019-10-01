@@ -1,0 +1,47 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-image: url("back1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container1 {
+    background-color: #0C8444;
+    padding: 40px;
+    margin: 25px auto;
+    background: linear-gradient(0deg, rgba(0, 36, 17, 1) 0%, rgba(12, 132, 68, 1) 70%, rgba(12, 132, 68, 0.613865614605217) 100%);
+    width: 75%;
+    margin: 30px auto;
+    border-right: 3pt solid white;
+    border-radius: 20px;
+    border-left: 3pt solid white;
+    padding: 15px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+
+.jumbotron {
+    background: #6c757b;
+    color: #FFF;
+    border-radius: 20px;
+}
+
+.jumbotron-sm {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.jumbotron small {
+    color: #FFF;
+}
+
+.h1 small {
+    font-size: 24px;
+}
+
+.formframe {
+    margin: 40px auto;
+}

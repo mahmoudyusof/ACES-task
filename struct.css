@@ -1,0 +1,29 @@
+body {
+    background-image: url("7.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.container {
+    background-color: #0C8444;
+    padding: 40px;
+    margin: 25px auto;
+    background: linear-gradient(0deg, rgba(0, 36, 17, 1) 0%, rgba(12, 132, 68, 1) 70%, rgba(12, 132, 68, 0.613865614605217) 100%);
+    width: 75%;
+    margin: 30px auto;
+    border-right: 8px solid white;
+    border-radius: 20px;
+    border-left: 8px solid white;
+    padding: 15px;
+}
+
+h3 {
+    color: #6c757d;
+    line-height: 30px;
+    text-decoration: underline white;
+}
+
+.rounded-circle {
+    width: 5%;
+}
