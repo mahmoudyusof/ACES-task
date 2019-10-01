@@ -1,7 +1,13 @@
 
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /* background-color: #eee; */
+}
 
-
-.nav{
+.navm {
     height: 100vh;
     padding: 0;
     position: fixed;
@@ -11,25 +17,31 @@
     box-shadow: -1px -1px 50px 2px #0009;
     transition: 0.3s ease-in-out all;
 }
-.show{
+
+.showm {
     left: 0;
 }
-.hide{
+
+.hidem {
     left: -210px;
     box-shadow: 0 0 0 0 white;
 }
-.nav img{
+
+.navm img {
     max-height: 100px;
 }
-.nav-list{
+
+.navm-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.nav-item{
+
+.navm-item {
     display: block;
 }
-.nav-link{
+
+.navm-link {
     color: #ddd;
     text-decoration: none;
     font-family: arial;
@@ -39,23 +51,27 @@
     display: block;
     transition: ease-in-out 0.3s all;
 }
-.nav-link:hover{
+
+.navm-link:hover {
     /* background-color: white;
     color: rgb(12, 132, 68); */
     background-color: rgb(2, 122, 58);
     color: white;
 }
-.nav-link.active{
+
+.navm-link.active {
     /* background-color: white;
     color: rgb(12, 132, 68); */
     background-color: rgb(2, 122, 58);
     color: white;
 }
-.toggle img{
+
+.toggle img {
     height: 50px;
     width: 45px;
 }
-.top{
+
+.topm {
     display: flex;
     width: 100%;
     padding: 0 30px;
@@ -66,26 +82,22 @@
     z-index: 9;
     align-items: center;
     transition: 0.3s ease-in-out all;
-    text-align: center;
-    color:white;
-    font-size: 2em;
-    font-family: sans-serif;
-    font-weight: bold;
-    height: 80px;
+}
 
+.topm img {
+    max-height: 80px;
 }
-.top a img{
-    max-height: 90px;
-    padding-top: 14px;
-}
-.toggle{
+
+.toggle {
     max-height: 50px;
     cursor: pointer;
 }
-.toggle img{
+
+.toggle img {
     filter: invert(100%);
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0;
     padding: 10px 0;
@@ -96,22 +108,29 @@ footer{
     justify-content: center;
     width: 100%;
 }
-.fa-facebook, .fa-linkedin, .fa-youtube, .fa-instagram{
+
+.fa-facebook,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
     color: #ddd;
 }
-.footer-link{
+
+.footer-link {
     margin: 0 5px;
 }
-.copy{
+
+.copy {
     font-family: arial;
     color: #ddd;
     margin-left: 50px;
 }
-@media(max-width: 560px){
-    footer{
+
+@media(max-width: 560px) {
+    footer {
         flex-direction: column;
     }
-    .copy{
+    .copy {
         text-align: center;
         margin-left: 0;
     }
@@ -153,7 +172,7 @@ body{
 
 p{
     font-family: sans-serif;
-text-shadow: 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
 }
 
 img{
