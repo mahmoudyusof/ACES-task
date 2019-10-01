@@ -1,3 +1,4 @@
+
 html,
 body {
     padding: 0;
@@ -134,3 +135,150 @@ footer {
         margin-left: 0;
     }
 }
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("back1.jpg");
+    max-height: 1000px;
+   background-size:auto;
+   background-repeat: no-repeat;
+}
+
+.container{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.2);
+    min-width: 100%;
+     max-width: 100%;
+    height: auto;
+    border: none;
+    position: relative;
+    top:25vh;
+    
+    
+}
+
+.col.row{position: absolute;}
+
+.slide1,.slide2,.slide3{
+
+    width: 80%;
+    height:90%;
+}
+#workshop{
+    max-width: 50%;
+    height:200px;
+}
+
+p{
+    font-family: sans-serif;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+.slide1{
+    position: absolute;
+    margin: 0 10%;
+    animation: fade1 8s infinite;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    padding: 1%;
+    padding-bottom: 5%;
+    
+}
+
+.slide2{
+    position: absolute;
+    animation: fade2 8s infinite;
+    color: white;
+    text-align: center;
+    font-size: 1.8vw;
+    margin: 0 10%;
+    padding: 1%;
+    
+}
+
+.slide3{
+    position: absolute;
+    animation: fade3 8s infinite;
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 0 10%;
+    padding-bottom: 5%;
+    
+}
+
+.container:hover .slide1,.container:hover .slide2,.container:hover .slide3{
+     animation-play-state: paused;
+}
+
+
+@keyframes fade1{
+    0%{
+        opacity: 1;
+    }
+   
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade2{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fade3{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
